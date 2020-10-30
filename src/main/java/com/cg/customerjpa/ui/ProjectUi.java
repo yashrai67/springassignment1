@@ -16,13 +16,13 @@ public class ProjectUi {
 	public void runUi() {
 		try {
 
-			Customer customer = add("Bhuratna");
+			Customer customer = add("Yash");
 			long id1 = customer.getId();
-			Customer customer2 = add("A");
+			Customer customer2 = add("SKY");
 			long id2 = customer2.getId();
-			Customer customer3 = add("B");
+			Customer customer3 = add("ROCKET");
 			long id3 = customer3.getId();
-			customer2=updateName(4, "C");
+			customer2=updateName(4, "BRAWL");
 			//System.out.println(customer2.getName());
 		}
 		catch (CustomerNotFoundException e){
