@@ -33,8 +33,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	public Customer updateName(long id, String name) {
 		Customer customer=dao.findById(id);
 		customer.setName(name);
-		ValidationUtil.checkName(customer.getName());
-        customer=dao.update(customer);
+        customer=repository.update(customer);
         return customer;
 	}
 
